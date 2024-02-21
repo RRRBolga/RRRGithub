@@ -1,0 +1,45 @@
+{
+  "Tdiscos": {
+    "disco": [
+      {
+        "id": "_1",
+        "titulo": "Pearl",
+        "autor": "Janis Joplin",
+        "ano": 1971,
+        "canciones":[
+            {"cancion":"«Move Over»"},
+            {"cancion":"«Cry Baby»"},
+            {"cancion":"«A Woman Left Lonely»"},
+            {"cancion":"«Half Moon»"},
+            {"cancion":"«Buried Alive in the Blues»"}
+        ]
+      },
+        {
+        "id": "_2",
+        "titulo": "Nevermind ",
+        "autor": "Nirvana",
+        "ano": 1991,
+        "canciones":[
+            {"cancion":"Smells like teen spirit"},
+            {"cancion":"In bloom"},
+            {"cancion":"Come as you are"},
+            {"cancion":"Breed"},
+            {"cancion":"Lithium"}
+        ]
+      },
+        {
+        "id": "_3",
+        "titulo": "Making Movies",
+        "autor": "Dire Straits",
+        "ano": 1980,
+        "canciones":[
+            {"cancion":"Tunnel Of Love"},
+            {"cancion":"Romeo and Juliet"},
+            {"cancion":"Skateaway"},
+            {"cancion":"Expresso Love"},
+            {"cancion":"Hand in Hand"}
+        ]
+     }
+    ]
+  },
+  }

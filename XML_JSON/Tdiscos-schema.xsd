@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Tdiscos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="disco" maxOccurs="unbounded">    
+                     <xs:complexType> 
+                     <xs:sequence>         
+                        <xs:element name="titulo" type="xs:string"/>
+                        <xs:element name="autor" type="xs:string"/>
+                        <xs:element name="ano" type="xs:integer"/>
+                        <xs:element name="precio" type="xs:string"/>
+                        <xs:complexType>
+                        <xs:element name="canciones">
+                            <xs:sequence>
+                                <xs:element name="cancion" type="xs:string"/> 
+                            </xs:sequence>
+                        </xs:element>
+                    </xs:complexType>
+                    <xs:attribute name="id" type="xs:ID" use="required"/>
+                    </xs:complexType> 
+                     </xs:sequence> 
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+<!---ME FALTA REFERENCIAR EL XML Y PASAR EL VALIDADOR-->

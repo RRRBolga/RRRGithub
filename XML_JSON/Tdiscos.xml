@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tdiscos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="tdiscos-schema.xsd">
+    
+    <disco id="_1">
+        <titulo>Pearl</titulo>
+        <autor>Janis Joplin</autor>
+        <ano>1971</ano>
+        <precio>20€</precio>
+        <canciones>
+            <cancion>«Move Over»</cancion>
+            <cancion>«Cry Baby»</cancion>
+            <cancion>«A Woman Left Lonely»</cancion><!--Todos los temas que lleve el disco-->
+            <cancion>«Half Moon»</cancion>
+            <cancion>«Buried Alive in the Blues»</cancion>
+        </canciones>
+    </disco>       
+    <disco id="_2">
+        <titulo>Nevermind</titulo>
+        <autor>Nirvana</autor>
+        <ano>1991</ano>
+        <precio>22€</precio>
+        <canciones>
+            <cancion>1.Smells like teen spirit</cancion>
+            <cancion>2.In bloom</cancion>
+            <cancion>3.Come as you are</cancion><!--Todos los temas que lleve el disco-->
+            <cancion>4.Breed</cancion>
+            <cancion>5.Lithium</cancion>
+        </canciones>
+    </disco>
+    <disco id="_3">
+        <titulo>Making Movies</titulo>
+        <autor>Dire Straits</autor>
+        <ano>1980</ano>
+        <precio>15€</precio>
+        <canciones>
+            <cancion>"Tunnel Of Love" </cancion>
+            <cancion>"Romeo and Juliet"</cancion>
+            <cancion>"Skateaway"</cancion><!--Todos los temas que lleve el disco-->
+            <cancion>"Expresso Love"</cancion>
+            <cancion>"Hand in Hand"</cancion>
+        </canciones>
+    </disco>
+</Tdiscos>
+
+<!--
+  TENEMOS UNA TIENDA DE DISCOS
+  CADA TIENDA DE DISCOS TIENE UNO O MAS DISCOS 
+  CADA DISCO TIENE UNA O MAS CANCIONES 
+  CADA CANCION TIENE UN TITULO
+                TIENE UN PRECIO
+                TIENE UN AUTOR
+  -->

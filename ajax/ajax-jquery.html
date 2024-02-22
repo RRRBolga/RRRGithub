@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AJAX con jQuery</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#loadDataBtn").click(function(){
+        $.ajax({
+            url: "library.json", // URL del archivo JSON
+            type: "GET", // Método de solicitud
+            dataType: "json", // Tipo de datos esperados en la respuesta
+            success: function(data){ // Función que se ejecuta si la solicitud es exitosa
+                $("#result").html(JSON.stringify(data)); // Mostrar los datos en un elemento HTML
+            },
+            error: function(jqXHR, textStatus, errorThrown){ // Función que se ejecuta si hay un error en la solicitud
+                console.log("Error: " + textStatus, errorThrown);
+            }
+        });
+    });
+});
+</script>
+</head>
+<body>
+
+<button id="loadDataBtn">Cargar Datos</button>
+<div id="result"></div>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "library": {
+    "book": [
+      {
+        "id": "_1",
+        "title": "El Hobbit",
+        "author": "J.R.R. Tolkien",
+        "year": 1937
+      },
+      {
+        "id": "_2",
+        "title": "Harry Potter y la piedra filosofal",
+        "author": "J.K. Rowling",
+        "year": 1997
+      },
+      {
+        "id": "_3",
+        "title": "Cien años de soledad",
+        "author": "Gabriel García Márquez",
+        "year": 1967
+      }
+    ]
+  },
+  "$schema": "library-schema.json"
+}

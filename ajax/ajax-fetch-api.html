@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AJAX con Fetch API</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+	#imagenContainer{
+		display: flex;
+ 		flex-wrap: wrap; /* permite que las imágenes se envuelvan en filas si no hay suficiente espacio horizontal */
+	}
+	#imagenContainer img{
+		width: 200px; /* ancho deseado para las imágenes */
+ 		height: auto; /* altura automática para mantener la relación de aspecto */
+  		margin: 10px; /* margen entre imágenes */
+	}
+</style>
+<script>
+	$(document).ready(function(){
+
+		document.getElementById("loadDataBtn").addEventListener("click", function(){
+			fetch("https://random.dog/woof.json") // URL del archivo JSON
+			.then(response => response.json()) // Convertir la respuesta a JSON
+			.then(data => { // Función que se ejecuta cuando la promesa se resuelve correctamente
+				document.getElementById("result").innerHTML = JSON.stringify(data); // Mostrar los datos en un elemento HTML
+
+				const imageUrl = data.url;
+				// Crear un elemento img en el DOM
+				const imgElement = document.createElement("img");
+
+				// Asignar la URL como el atributo src de la etiqueta img
+				imgElement.src = imageUrl;
+
+				// Agregar la imagen al contenedor en el DOM
+				document.getElementById("imagenContainer").appendChild(imgElement);
+			})
+			.catch(error => {
+				console.error("Error:", error); // Función que se ejecuta si hay un error en la promesa
+			})			
+		});
+	});
+</script>
+</head>
+<body>
+
+<button id="loadDataBtn">Cargar Datos</button>
+<div id="result"></div>
+<div id="imagenContainer"></div>
+</body>
+</html>
